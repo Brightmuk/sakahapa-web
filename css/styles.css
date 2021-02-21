@@ -201,6 +201,16 @@ a{
     background-color:  rgb(252, 252, 250);
     
 }
+.info-flex-extended{
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color:  rgb(252, 252, 250);
+    
+}
 .info-flex p{
     max-width: 600px;
 }
