@@ -37,14 +37,6 @@ $(document).scroll(function() {
     $('.download-app').css('display','block')
   }
   
-  if(currentRoute=='.about-us'){
-    if ($(document).scrollTop()> pauseAtThisHeight) {
-      $('.info-video').trigger('pause');
-    } else {
-      $('.info-video').trigger('play');
-
-    }
-  }
 })
 
 //reduce opacity of video on scroll down
