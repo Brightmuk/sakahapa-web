@@ -239,9 +239,11 @@ a{
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
   }
-  
+  .price{
+      font-weight: 700;
+  }
   td, th {
     border: 1px solid #dddddd;
     text-align: left;
