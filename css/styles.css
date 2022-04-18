@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
 /* general styling */
 html {
     scroll-behavior: smooth;
@@ -241,9 +242,7 @@ table {
     border-collapse: collapse;
     width: 100%;
   }
-  .price{
-      font-weight: 700;
-  }
+
   td, th {
     border: 1px solid #dddddd;
     text-align: left;
