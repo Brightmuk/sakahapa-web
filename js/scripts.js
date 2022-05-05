@@ -4,7 +4,7 @@ function loadpage(){
   setTimeout(function(){
     $('.loader').fadeToggle();
     $('.page-content').css('display','block');
-},2000);
+},1500);
 }
 loadpage()
 

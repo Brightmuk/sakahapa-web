@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap&family=Kaushan+Script');
 
 
 /* general styling */
@@ -34,31 +34,7 @@ html {
     height:50px;
     width:50px
 }
-.download-app{
-    display: none;
-    position:fixed;
-    width:50px;
-    padding:10px;
-    background-color: rgba(0,0,0,0.9);
-    transition: 0.3s ease;
-}
-.download-play-store{
-    left:0;
-    bottom:10%;
-    border-top-right-radius: 25px;
-}
-.download-app-store{
-    right:0;
-    bottom:10%;
-    border-top-left-radius: 25px;
-}
-.download-app img{
-    height:30px;
-}
-.download-app p{
-    color:white;
-    font-size: 12px;
-}
+
 li{
     list-style: none;
 }
@@ -103,8 +79,9 @@ a{
     margin-right: 3%;
 }
 .navbar .logo {
-    color: white;
+    color: rgb(248, 175, 47);
     font-size: 30px;
+    font-family: 'Kaushan script';
     font-weight: 400;
 }
 .navbar .space{
@@ -252,55 +229,56 @@ table {
   tr:nth-child(even) {
     background-color: rgb(255, 233, 194);
   }
+  /* Home section styling */
+.home{
+    padding-left:50px;
+    padding-right: 50px;
+height: 100vh;
+/* align-items: center; */
+display: flex;
+justify-content: space-around;
+padding-top: 100px;
 
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  
-  input[type=submit] {
-    float:right;
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  input[type=submit]:hover {
-    background-color: #111;
-  }
-  .alert{
-    margin:30px;
-    width:100%;
+}
+.home img{
+    width: 40vw;
+}
+.home .home-right{
     padding:20px;
-    width:100%;
-    text-align:center;
-    background:rgba(255, 255, 255, 0.7);
-    animation:alert-fade 5s alternate;
-    
-  }
-  .mail-not-sent{
-      display:none
-  }
-  .mail-sent{
-    display:block
-  }
-  @keyframes alert-fade {
-    from{
-        opacity:1;
-    }
-    to{
-        opacity:0
-    }
-  }
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.home .title{
+    text-align: center;
+    color: rgb(248, 175, 47);
+}
+.home .download{
+    padding: 20px;
+}
+.home .download-mobile{
+    display: none;
+    padding: 20px;
+}
+.home .download img{
+    width: 200px;
+}
+.home p{
+    font-size: 20px;
+}
+.home .categories{
+
+    display: inline-block;
+}
+.home .categories span{
+    padding:5px;
+    border-radius: 10px;
+}
+.home .categories b{
+    font-size: 30px;
+}
+
 /* footer section */
 .footer{
     height:10%;
@@ -366,6 +344,37 @@ input[type=text], select, textarea {
 
 
 /* responsiveness */
+@media (max-width: 900px){
+    .home{
+        padding-left:10px;
+        padding-right: 10px;
+        height: auto;
+        justify-content: center;
+        display: block;
+    }
+    .home-left{
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100vw;
+    }
+    .home-left img{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    }
+    .home .download{
+        display: none;
+    }
+    .home .download-mobile{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+}
 
 
 @media (max-width: 947px){
