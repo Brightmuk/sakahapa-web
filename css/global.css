@@ -1,0 +1,261 @@
+/* contains stying for the navbar, the footer and all other uniform page elements */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap&family=Kaushan+Script');
+
+
+/* global styling */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.loader img{
+    height:50px;
+    width:50px
+}
+
+li{
+    list-style: none;
+}
+a{
+    color:rgb(75, 136, 250)
+}
+
+/* Navbar styling */
+
+.navbar{
+    background: rgb(0,0,0,0.9);
+    padding:10px 20px;
+    padding-bottom:5px;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    
+}
+
+.navbar.sticky{
+    padding:10px 10px;
+    z-index: 999;
+   background: rgb(0,0,0,0.9);
+}
+.nav-wrapper{
+    width:100%;
+    position: fixed;
+    overflow-y: hidden;
+}
+.nav-active{
+    position: relative;
+    
+}
+.img-logo{
+    width:35px;
+    height:35px;
+    background: white;
+    border-radius: 40px;
+    padding:3px;
+    margin-right: 3%;
+}
+.navbar .logo {
+    color: rgb(248, 175, 47);
+    font-size: 30px;
+    font-family: 'Kaushan script';
+    font-weight: 400;
+}
+.navbar .space{
+    width:15%;
+}
+.navbar .max-width{
+    display: flex;
+}
+.navbar.menu{
+    position: absolute;
+    right: 0;
+}
+.navbar .menu a{
+    list-style: none;
+    display: inline-block;   
+}
+
+.navbar .menu a{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left:35px;
+    transition: 0.5s
+}
+
+.navbar .menu a:hover{
+    cursor: pointer;
+    color:rgb(204, 204, 204);
+}
+.navbar.sticky .menu li:hover{
+    color:white;
+}
+.menu-btn{
+    color:white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right:10px
+}
+
+/* body stying */
+
+section h2{
+    text-align: center;
+    color: rgb(248, 175, 47);
+    
+}
+p{
+    font-size: 20px;
+}
+li{
+    font-size: 20px;
+}
+
+
+
+/* Footer styling */
+
+.footer{
+    height:10%;
+    width:100%;
+    background-color: black;
+    bottom:0;
+    padding:25px;
+    color:rgb(126, 126, 126);
+    
+}
+.footer p{
+    font-size: 14px;
+}
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.footer-header .play-store,.app-store{
+    margin:5px;
+    height:40px;
+}
+.footer-upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .footer-lower a{
+    color:white
+}
+.footer .footer-lower {
+    margin-top:20px;
+    color:rgb(129, 129, 129);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .socials-links a{
+    color: rgb(134, 134, 134);
+    font-size: 14px;
+    transition: 0.3s;
+}
+.footer .socials-links a:hover{
+    color: rgb(219, 219, 219);
+    
+}
+.vl {
+    border-left: 1px solid rgb(119, 119, 119);
+    height: 50px;
+  }
+.footer .footer-text{
+    color:rgb(228, 228, 228);
+    font-size: 12px;
+
+}
+.footer .footer-links{
+    margin-left: 10px;
+    color: rgb(134, 134, 134);
+}
+
+/* responsiveness */
+
+
+@media (max-width: 947px){
+    .navbar .space{
+        width:70%;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu a{
+        display: block;
+    }
+    .navbar .menu a{
+        
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .navbar .max-width{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 23px;
+    }
+
+    .info-flex img{
+        margin-top: 10px;
+    }
+    
+}
