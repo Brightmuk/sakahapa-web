@@ -70,10 +70,7 @@ width: 45%;
 
 
 
-.works{
-    background-color: rgb(248, 175, 47);
-    
-}
+
 .works h1{
     font-size: 50px;
     color: white;
@@ -85,9 +82,66 @@ width: 45%;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid white;
+ 
 }
 .step .step-left{
     width: 50%;
+}
+#buyer-steps{
+    background-color: rgb(248, 175, 47);
+    }
+#buyer-steps p,ol,li{
+ color: rgb(27, 27, 27);
+}
+#seller-steps{
+background-color: rgb(36, 36, 36);
+}
+#seller-steps .step p,li,th{
+    color:white
+}
+#seller-steps .step{
+    border-bottom: 1px solid rgb(70, 70, 70);
+}
+#seller-steps .step:nth-child(5){
+    border: none;
+}
+#seller-steps .step:nth-child(6){
+    border: none;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(255, 233, 194);
+  }
+  tr:nth-child(even) td {
+    color: rgb(0, 0, 0);
+  }
+  tr:nth-child(odd) {
+    background-color: rgb(12, 12, 12);
+  }
+  tr:nth-child(odd) td {
+    color: rgb(255, 233, 194);
+  }
+
+  #packages{
+      display: block;
+      height: 100vh;
+  }
+  #packages h1{
+    text-align: center;
 }
 
 

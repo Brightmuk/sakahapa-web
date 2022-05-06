@@ -133,12 +133,13 @@ li{
 
 
 
+
 /* Footer styling */
 
 .footer{
     height:10%;
     width:100%;
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     bottom:0;
     padding:25px;
     color:rgb(126, 126, 126);
