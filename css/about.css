@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+#home .categories span{
+    padding:5px;
+    font-size: 13px;
+    border-radius: 15px;
+    margin-right: 2px;
+}
+#home .categories b{
+    font-size: 30px;
+
+  
+}

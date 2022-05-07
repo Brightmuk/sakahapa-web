@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SakaHapa</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="shortcut icon" href="images/sk1.png">
 
 </head>
@@ -13,16 +13,16 @@
     <img class="img-logo" src="images/sk1.png">
 </div>
 <body>
-    <div class="page-content">
+    
     <div class="nav-wrapper">
     <nav  class="navbar">
         <div class="max-width">
             <img class="img-logo" src="images/sk1.png">
-            <div class="logo"> SakaHapa</div>
+            <a href="/" class="logo"> SakaHapa </a>
             <div class="space"></div>
             <ul class="menu">
-                <a id="about-us-link" href="index.html">About us</a>
-                <a id="terms-of-service-link" href="terms-of-service.html">Terms of service</a>
+                <a id="about-us-link" href="about.html">About us</a>
+                <a id="terms-of-service-link" class="active" href="terms-of-service.html">Terms of service</a>
                 <a id="privacy-policy-link" href="privacy-policy.html">Privacy policy</a>
                 <a id="help-and-support-link" href="help-and-support.html">Help & support</a>
             </ul>
@@ -32,26 +32,13 @@
             </div>
         </div>
     </nav>
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
-</div>
-<a href="https://play.google.com/store/apps/details?id=com.sakahapa.sakaHapa">
-<div class="download-play-store download-app">
-       <img class="play-store-logo" src="images/play-store-logo.png">
-       <p>GET<br>NOW</p>
- </div>
-</a>
-<a href="https://apps.apple.com/app/id1545306922">
-    <div class="download-app-store download-app">
-           <img class="app-store-logo" src="images/app-store-logo.png">
-           <p>GET<br>NOW</p>
-     </div>
-    </a>
 
+</div>
+
+<div class="page-content">
     <section id="terms-of-service" class="terms-of-service">
         <div class="container">
-            <h1>Terms of service</h1>
+            <h1 class="section-title">Terms of service</h1>
             <p>
                 This application is operated by SakaHapa. Throughout this document, the terms “we”, “us”
                 and “our” refer to SakaHapa. We will also use the term “user(s)” to refer to both buyers and
@@ -379,9 +366,11 @@
         </section>
 
 
-    
+    </div>
+    <br>
+    <br>
     <!-- footer -->
-    <section>
+
         <div class="footer">
             <div class="footer-header">
                 <a href="https://play.google.com/store/apps/details?id=com.sakahapa.sakaHapa">
@@ -394,9 +383,9 @@
             </div>
             <div class="footer-upper">
                 <div class="socials-links">
-                    <a href="https://twitter.com/"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter </span></a>.
-                    <a href="https://www.instagram.com/sakahapa/"><i class="fab fa-instagram" aria-hidden="true"></i><span> Instagram </span></a>.
-                    <a href="https://www.facebook.com/SakaHapa-113400976749094/"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook </span></a>.
+                    <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i><span> Twitter </span></a>.
+                    <a href="https://www.instagram.com/sakahapa/"><i class="fa fa-instagram" aria-hidden="true"></i><span> Instagram </span></a>.
+                    <a href="https://www.facebook.com/SakaHapa-113400976749094/"><i class="fa fa-facebook" aria-hidden="true"></i><span> Facebook </span></a>.
                 </div>
             </div>
             <div class="footer-lower">
@@ -404,9 +393,9 @@
                 <span class="footer-links"><a href="#terms-of-service" class="footer-link"> Terms of service </a> | <a href="#privacy-policy" class="footer-link"> Privacy policy </a></span>
             </div>
         </div>
-    </section>
+   
 
-</div>
+
 </body>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>

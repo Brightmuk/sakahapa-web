@@ -2,7 +2,7 @@
 
 
 /* Home section */
-.home{
+#home{
 
     height: 100vh;
     display: flex;
@@ -16,54 +16,110 @@
     color: rgb(248, 175, 47);
 }
 
-.home img{
+#home img{
     width: 35vw;
 }
-.home .home-right{
+#home .home-right{
     padding:20px;
     justify-content: space-around;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-.home .title{
+#home .title{
     text-align: center;
     font-size: 17px;
 
 }
-.home .download{
+#home .download{
     padding: 20px;
 }
-
-.home .download-mobile{
+#home .download img{
+    width: 150px;
+}
+#home .download{
+    width: 350px;
+}
+#home .download-mobile{
     display: none;
     
 }
-.home .download-mobile img{
+#home .download-mobile img{
 width: 45%;
     
 }
-.home .download img{
-    width: 150px;
+
+
+/* take tour section */
+
+#take-tour{
+
+    z-index: -1;
+    height: 50vh;
+}
+#take-tour .take-tour-title{
+    position: relative;
+}
+#take-tour .content{
+    display: flex;
+    justify-content: space-between;
+
+}
+#take-tour h1{
+  font-size: 50px;
+  text-align: center;
+  color: rgb(31, 24, 14);
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  top:20px;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50vw; 
+  color: white;
+}
+#take-tour p{
+    color: white;
+}
+.tour-left{
+    background-color: rgb(248, 175, 47);
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.tour-right{
+background-color: rgb(26, 26, 26);
+width: 50%;
+height: 50vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+}
+.tour-right a{
+    background-color: rgb(248, 175, 47);
+    padding: 20px;
+    border-radius: 50px;
+    width: 200px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
 }
 
-.home .categories{
-    justify-content: center;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.home .categories span{
-    padding:5px;
-
-    font-size: 13px;
-    border-radius: 15px;
-    margin-right: 2px;
-}
-.home .categories b{
-    font-size: 30px;
-
-  
+.tour-left a{
+    background-color: rgb(37, 37, 37);
+    padding: 20px;
+    border-radius: 50px;
+    width: 200px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    cursor:pointer;
+    
 }
 
 /* how it woeks section */
@@ -71,7 +127,7 @@ width: 45%;
 
 
 
-.works h1{
+#works h1{
     font-size: 50px;
     color: white;
 }
@@ -81,11 +137,17 @@ width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid white;
+    border-bottom: 0.5px solid rgb(248, 204, 129);
  
+}
+.step:nth-child(1){
+    border-top: 0.5px solid rgb(248, 204, 129);
 }
 .step .step-left{
     width: 50%;
+}
+.step .step-right .sizedbox{
+    width: 250px;
 }
 #buyer-steps{
     background-color: rgb(248, 175, 47);
@@ -148,14 +210,22 @@ table {
 /* responsiveness */
 
 @media (max-width: 900px){
-    .home{
+    .step .step-right .sizedbox{
+        width: 0px;
+    }
+    #home{
+
+        padding-top: 100px;
+    }
+ 
+    #home{
         padding-left:10px;
         padding-right: 10px;
         height: auto;
         justify-content: center;
         display: block;
     }
-    .home .punch-line{
+    #home .punch-line{
         font-size: 40px;
     }
     .home-left{
@@ -170,10 +240,10 @@ table {
   margin-right: auto;
   width: 50%;
     }
-    .home .download{
+    #home .download{
         display: none;
     }
-    .home .download-mobile{
+    #home .download-mobile{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -184,38 +254,83 @@ table {
     }
 }
 @media (max-width: 770px) {
-    .download-app{
-        display: block;
-    }
-    .home .categories{
-
-        width: 70%;
-
-    }
-    
-}
-@media (max-width: 400px) {
-    .home{
+    #home{
         justify-content: space-around;
         display: flex;
         flex-direction: column;
         height: 100vh;
         margin:auto;
         padding: auto;
+        padding-top: 100px;
     }
-    .home .download-mobile{
+    #home .punch-line{
+        font-size: 30px;
+    }
+    #home img{
+        width: 70vw;
+    }
+    .download-app{
+        display: block;
+    }
+    #home .categories{
+
+        width: 70%;
+
+    }
+    .step{
+        display: block;
+    }
+    .step .step-left{
+        width: 100%;
+    }
+    .step .step-right{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #seller-steps .step:nth-child(6){
+        height: auto;
+    }
+    
+}
+@media (max-width: 400px) {
+    #works h1{
+        font-size: 30px;
+    }
+    #home .download-mobile{
         width: 90%;
 
     }
-    .home .download-mobile img{
+    #home .download-mobile img{
         width: 49%;
    
     }
-    .home .categories{
+    #home .categories{
        display: none;
 
     }
 
-
+    #take-tour h1{
+        font-size: 30px;
+    }
+    #take-tour a{
+        width: 100px;
+        border-radius: 30px;
+        padding: 10px;
+    }
+    .step{
+        display: block;
+    }
+    .step .step-left{
+        width: 100%;
+    }
+    .step .step-right{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .step p{
+        padding-bottom: 20px;
+    }
 
 }

@@ -19,10 +19,10 @@
     <nav  class="navbar">
         <div class="max-width">
             <img class="img-logo" src="images/sk1.png">
-            <div class="logo"> SakaHapa </div>
+            <a href="/" class="logo"> SakaHapa </a>
             <div class="space"></div>
             <ul class="menu">
-                <a id="about-us-link" href="index.html">About us</a>
+                <a id="about-us-link" href="about.html">About us</a>
                 <a id="terms-of-service-link" href="terms-of-service.html">Terms of service</a>
                 <a id="privacy-policy-link" href="privacy-policy.html">Privacy policy</a>
                 <a id="help-and-support-link" href="help-and-support.html">Help & support</a>
@@ -38,19 +38,12 @@
       </div>
 </div>
 
-    <section class ="home">
+    <section id ="home">
         <div class="home-left">
             <h1 class="punch-line">Where buyers save <br>
                 and sellers sell more
             </h1>
 
-            <!-- <p><b>SakaHapa </b >is a sourcing App where a buyer can post the kind
-                of product, he/she is looking to purchase and any seller
-                within a 40km radius that has the same item or something
-                similar to it can respond with a picture and price.
-            </p><br> -->
-            <!-- <p class="title">Current categories</p>
-            -->
              <br>
             <div class="download">
                 <p class="title">Download SakaHapa now</p>
@@ -63,15 +56,7 @@
                         <img class="appstore" src="images/app-store.png">
                     </a>
             </div>
-            <!-- <div class="categories">
-                <span>Fashion <b>.</b> </span> 
-                <span>Electronics <b>.</b> </span>
-                <span>Home furniture&appliances <b>.</b> </span><br>
-                <span>Mobile phones&tablets <b>.</b> </span> 
-                <span>Vehicle&vehicle parts <b>.</b> </span> 
-                <span>Health&beauty <b>.</b> </span> <br>
-                <span>Property.</span>
-            </div> -->
+
         </div>
         <div class="home-right">
             <img src="images/sakahapa-images.png" >
@@ -87,11 +72,37 @@
                 <a href="https://apps.apple.com/app/id1545306922">
                     <img class="appstore" src="images/app-store.png">
                 </a>
+
         </div>
 
 
     </section>
-    <section class="works">
+    <section id = "take-tour">
+       <div class="take-tour-title">
+        <h1>Take tour</h1>
+       </div>
+
+       
+        <div class="content">
+        <div class="tour-left">
+            <br>
+            <p>Take a tour as</p>
+            <a href="#buyer-steps">
+                Buyer
+            </a>
+        </div>
+        <div class="tour-right">
+            <br>
+            <p>Take a tour as</p>
+            <a href="#seller-steps">
+                Seller
+            </a>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="works">
        
  <div id="buyer-steps">
 
@@ -165,7 +176,7 @@
 
 
 <div class="step">
-    <div class="content">
+    <div class="step-left">
         <h1>Remember:</h1>
        
         <p>1.  Never send money in advance including delivery fees.</p>
@@ -178,6 +189,9 @@
     <p>5. Kindly rate your seller after every transaction to
     help other buyers in future.</p>
    
+    </div>
+    <div class="step-right">
+        <div class="sizedbox"></div>
     </div>
 
 </div>
@@ -232,7 +246,7 @@
 </div>
 
 <div class="step">
-    <div class="content">
+    <div class="step-left">
         <h1>Tips for Success while Using the App</h1>
         <br>
         <ol>
@@ -256,6 +270,9 @@
         the package they subscribe to. These products can be
         viewed by buyers within a 40km geographical radius
         from the seller.</p>
+    </div>
+    <div class="step-right">
+        <div class="sizedbox"></div>
     </div>
 </div>
 
@@ -285,13 +302,26 @@
             </tr>
             <tr>
               <td><b>Product performance</b></td>
-              <td>N/A</td>
-              <td>Sellers  can view product performance(<br>views, impressions & how many buyers have saved to collection)</td>
+              <td>&#10006;</td>
+              <td>Sellers can view
+                individual product
+                statistics according to
+                the following
+                parameters:<br>1. How many buyers
+                viewed a
+                particular
+                product
+                <br>
+                2. How many buyers
+                saved a
+                particular
+                product to
+                collection</td>
               
             </tr>
             <tr>
                 <td><b>Indexing</b></td>
-                <td>Products appear as second priority</td>
+                <td>Products appear on top as second priority</td>
                 <td>Products appear on top as first priority</td>
               
         
@@ -310,18 +340,7 @@
 
 </div>
 
-  
-    <!-- <p><b>SakaHapa </b >s a sourcing App where a buyer can specify the kind of product, he/she is looking
-                to purchase and any seller within a 40km radius that has the same item or something similar
-                to it can respond with a picture and price. 
-                We only point buyers in the direction of the most affordable seller for the item they desire.
-                This saves them time they would have otherwise spent physically sourcing for the specific
-                product they want. 
-                Currently we have incorporated the following categories into the App: Fashion, Electronics,
-                Home, furniture &amp; appliances, Mobile phone &amp; tablet, Vehicle &amp; vehicle parts, Health &amp; beaty
-                and Property.
-            </p>
-            -->
+
             <br>
 
 
@@ -344,12 +363,12 @@
             </div>
             <div class="footer-lower">
                 <p class="footer-text-last">copyrights &#169; <span id="year"></span> SakaHapa Inc. All rights reserved. |</p> 
-                <span class="footer-links"><a href="#terms-of-service" class="footer-link"> Terms of service </a> | <a href="#privacy-policy" class="footer-link"> Privacy policy </a></span>
+                <span class="footer-links"><a href="/terms-of-service.html" class="footer-link"> Terms of service </a> | <a href="/privacy-policy.html" class="footer-link"> Privacy policy </a></span>
             </div>
         </div>
 
 
-</div>
+
 </body>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>

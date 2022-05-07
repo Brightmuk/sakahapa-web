@@ -3,7 +3,7 @@
 function loadpage(){
   setTimeout(function(){
     $('.loader').fadeToggle();
-    $('.page-content').css('display','block');
+    $('body').css('display','block');
 },1500);
 }
 loadpage()
