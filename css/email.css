@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap&family=Kaushan+Script');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    border-top: 10px solid orange;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: rgb(252, 251, 249);
+    width:500px;
+    height: auto;
+}
+.text-center{
+    text-align: center;
+}
+.header{
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding-bottom: 30px;
+
+}
+
+.header .logo{
+    width: 50px;
+}
+.receipt-body #title{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+.info{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-size: 12px;
+}
+td, th {
+    padding: 8px;
+    
+  }
+tr:nth-child(1){
+    background-color: rgb(236, 235, 235);
+    color: rgb(0, 0, 0);
+}
+tr:nth-child(6){
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+th:nth-child(1){
+    text-align: left;
+}
+th:nth-child(2){
+    text-align: right;
+}
+td:nth-child(1){
+    text-align: left;
+}
+td:nth-child(2){
+    text-align: right;
+}
+.footer-receipt {
+    margin-top:20px;
+    color:rgb(129, 129, 129);
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.footer-lower {
+    margin-top:20px;
+    color:rgb(129, 129, 129);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.footer-header .play-store,.app-store{
+    margin:5px;
+    height:40px;
+}
+.footer-upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-upper {
+    margin-top:20px;
+    color:rgb(129, 129, 129);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+@media (max-width: 480px) {
+p{
+    font-size: 10px;
+}
+.container{
+
+    width:300px;
+    height: auto;
+}
+    
+}

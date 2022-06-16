@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="shortcut icon" href="images/bd-logo.png">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap&family=Kaushan+Script');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    border-top: 10px solid orange;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: rgb(252, 251, 249);
+    width:500px;
+    height: auto;
+}
+.text-center{
+    text-align: center;
+}
+.header{
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding-bottom: 30px;
+
+}
+
+.header .logo{
+    width: 50px;
+}
+.receipt-body #title{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+.info{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-size: 12px;
+}
+td, th {
+    padding: 8px;
+    
+  }
+tr:nth-child(1){
+    background-color: rgb(236, 235, 235);
+    color: rgb(0, 0, 0);
+}
+tr:nth-child(6){
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+th:nth-child(1){
+    text-align: left;
+}
+th:nth-child(2){
+    text-align: right;
+}
+td:nth-child(1){
+    text-align: left;
+}
+td:nth-child(2){
+    text-align: right;
+}
+.footer-receipt {
+    margin-top:20px;
+    color:rgb(129, 129, 129);
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.footer-lower {
+    margin-top:20px;
+    color:rgb(129, 129, 129);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.footer-header .play-store,.app-store{
+    margin:5px;
+    height:40px;
+}
+.footer-upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-upper {
+    margin-top:20px;
+    color:rgb(129, 129, 129);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+@media (max-width: 480px) {
+p{
+    font-size: 10px;
+}
+.container{
+
+    width:300px;
+    height: auto;
+}
+    
+}
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- swiper cdn ends here -->
+
+</head>
+<body >
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="images/sk1.png">
+            <h3>SakaHapa</h3>
+        </div>
+        
+        <div class="receipt-body">
+            <p id="title">Your SakaHapa transaction was successful. Thanks!</p>
+            
+          
+            <p class="text-center">You renewed the silver package. Here is the recipt for your transaction.</p>
+            <br>
+            <div class="info">
+                <div class="left">
+                    <p>Date: 9/12/2022 </p> 
+                    <p>Account: be.rightmuk@gmail.com</p>
+                </div>
+                <div class="right"></div>
+
+            </div>
+                <br>
+            <table>
+                <tr>
+                    <th>Order Number:</th>
+                    <th>34793848273183</th>
+                  
+                  </tr>
+                <tr>
+                    <th>Details</th>
+                    <th>Price</th>
+                  
+                  </tr>
+
+                  <tr>
+                    <td>Silver package</td>
+                    <td>ksh.1999</td>
+                  
+                  </tr>
+
+
+                  <tr>
+                    <td> </td>
+                    <td> </td>
+                  
+                  </tr>
+                  <tr>
+                    <td> </td>
+                    <td> </td>
+                  
+                  </tr>
+                
+                  <tr>
+                    <td>Total</td>
+                    <td>ksh.1999</td>
+                    
+                  </tr>
+            </table>
+            <br>
+            <br>
+            <div class="footer-receipt">
+
+                <p class="footer-text-last text-center">copyrights &#169; <span id="year"></span> SakaHapa Inc. All rights reserved. </p>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footer-header">
+        <a href="https://play.google.com/store/apps/details?id=com.sakahapa.sakaHapa">
+            <img class="play-store" src="images/google-play-store.png">
+            </a>
+            
+            <a href="https://apps.apple.com/app/id1545306922">
+                <img class="app-store" src="images/app-store.png">
+            </a>
+    </div>
+    <div class="footer-upper">
+        <div class="socials-links">
+            <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i><span> Twitter </span></a>.
+            <a href="https://www.instagram.com/sakahapa/"><i class="fa fa-instagram" aria-hidden="true"></i><span> Instagram </span></a>.
+            <a href="https://www.facebook.com/SakaHapa-113400976749094/"><i class="fa fa-facebook" aria-hidden="true"></i><span> Facebook </span></a>.
+        </div>
+    </div>
+    <div class="footer-lower">
+        <p class="footer-text-last">copyrights &#169; <span id="year"></span> SakaHapa Inc. All rights reserved. </p> 
+        <span class="footer-links"><a href="sakahapa.com/terms-of-service.html" class="footer-link"> Terms of service </a> | <a href="sakahapa.com/privacy-policy.html" class="footer-link"> Privacy policy </a> | <a href="sakahapa.com/help-and-support.html" class="footer-link"> support </a></span>
+    </div>
+</body>
+</html>
