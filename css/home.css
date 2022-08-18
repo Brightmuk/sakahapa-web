@@ -145,6 +145,9 @@ flex-direction: column;
     border-bottom: 0.5px solid rgb(248, 204, 129);
  
 }
+.step img{
+    width: 25vw;
+}
 .step:nth-child(1){
     border-top: 0.5px solid rgb(248, 204, 129);
 }
@@ -271,6 +274,9 @@ table {
 
 }
 @media (max-width: 770px) {
+    .step img{
+        width: 50vw;
+    }
     #home{
         justify-content: space-around;
         display: flex;
@@ -325,6 +331,9 @@ table {
         width: 100%;
 
     } */
+    .step img{
+        width: 70vw;
+    }
     #home .download-mobile {
    
         width: 100%;
